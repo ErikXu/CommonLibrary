@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Crypto\AesCryptoSetting.cs" />
     <Compile Include="Crypto\AesCryptoTests.cs" />
+    <Compile Include="Crypto\Md5CryptoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
