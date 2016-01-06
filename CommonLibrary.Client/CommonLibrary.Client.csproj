@@ -48,8 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crypto\IAesCryptoUtil.cs" />
+    <Compile Include="Crypto\IDesCryptoUtil.cs" />
     <Compile Include="Crypto\IMd5CryptoUtil.cs" />
     <Compile Include="Crypto\Impl\AesCryptoUtil.cs" />
+    <Compile Include="Crypto\Impl\DesCryptoUtil.cs" />
     <Compile Include="Crypto\Impl\Md5CryptoUtil.cs" />
     <Compile Include="Crypto\Impl\SaltUtil.cs" />
     <Compile Include="Crypto\ISaltUtil.cs" />
