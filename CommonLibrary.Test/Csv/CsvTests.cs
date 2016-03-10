@@ -42,7 +42,7 @@ namespace CommonLibrary.Test.Csv
                 new Simple{Id = 3, Name = "C"}
             };
 
-            _csvUtil.Write(@"C:\simple.csv", simples);
+            _csvUtil.Write(@"D:\simple.csv", simples);
         }
     }
 

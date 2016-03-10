@@ -52,6 +52,7 @@
     <Compile Include="Crypto\DesCryptoTests.cs" />
     <Compile Include="Crypto\Md5CryptoTests.cs" />
     <Compile Include="Csv\CsvTests.cs" />
+    <Compile Include="Excel\ExcelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Text\SpellTests.cs" />
   </ItemGroup>
