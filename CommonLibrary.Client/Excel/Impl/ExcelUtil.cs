@@ -8,7 +8,7 @@ namespace CommonLibrary.Client.Excel.Impl
 {
     public class ExcelUtil : IExcelUtil
     {
-        public void Export(Stream stream, params Sheet[] sheets)
+        public void ExportToStream(Stream stream, params Sheet[] sheets)
         {
             var workbook = new HSSFWorkbook();
 
@@ -22,11 +22,11 @@ namespace CommonLibrary.Client.Excel.Impl
             workbook.Write(stream);
         }
 
-        public void Export(string filePath, params Sheet[] sheets)
+        public void ExportToFile(string filePath, params Sheet[] sheets)
         {
             using (var fs = new FileStream(filePath, FileMode.Create))
             {
-                Export(fs, sheets);
+                ExportToStream(fs, sheets);
             }
         }
 

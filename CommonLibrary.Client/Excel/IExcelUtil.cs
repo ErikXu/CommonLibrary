@@ -5,9 +5,9 @@ namespace CommonLibrary.Client.Excel
 {
     public interface IExcelUtil
     {
-        void Export(Stream stream, params Sheet[] sheets);
+        void ExportToStream(Stream stream, params Sheet[] sheets);
 
-        void Export(string filePath, params Sheet[] sheets);
+        void ExportToFile(string filePath, params Sheet[] sheets);
     }
 
     public class Sheet

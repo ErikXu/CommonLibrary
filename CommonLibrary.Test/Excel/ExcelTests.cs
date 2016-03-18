@@ -48,7 +48,7 @@ namespace CommonLibrary.Test.Excel
                 Rows = new List<dynamic>(salaries)
             };
 
-            _excelUtil.Export(@"D:\simple.xls", sheet1, sheet2);
+            _excelUtil.ExportToFile(@"D:\simple.xls", sheet1, sheet2);
         }
     }
 

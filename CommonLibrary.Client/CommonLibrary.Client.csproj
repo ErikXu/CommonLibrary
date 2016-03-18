@@ -38,6 +38,10 @@
       <HintPath>..\packages\CsvHelper.2.13.5.0\lib\net40-client\CsvHelper.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DocX, Version=1.0.0.19, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocX.1.0.0.19\lib\net40\DocX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
@@ -82,12 +86,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Text\Impl\SpellUtil.cs" />
     <Compile Include="Text\ISpellUtil.cs" />
+    <Compile Include="Word\Impl\WordUtil.cs" />
+    <Compile Include="Word\IWordUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Csv\ReadMe.md" />
     <None Include="Excel\ReadMe.md" />
     <None Include="packages.config" />
     <None Include="Text\ReadMe.md" />
+    <None Include="Word\ReadMe.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
